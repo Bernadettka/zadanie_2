@@ -19,6 +19,17 @@ https://templatemo.com/tm-611-maison-doree
 -->
 </head>
 <body>
+    <?php
+  $hodina = date("H");
+
+  if ($hodina < 12) {
+      echo "Dobré ráno!";
+  } elseif ($hodina < 18) {
+      echo "Dobrý deň!";
+  } else {
+      echo "Dobrý večer!";
+  }
+?>
     <!-- Header -->
     <header class="site-header" id="header">
         <div class="container">
@@ -506,3 +517,4 @@ https://templatemo.com/tm-611-maison-doree
     <script src="templatemo-maison-doree.js"></script>
 </body>
 </html>
+
